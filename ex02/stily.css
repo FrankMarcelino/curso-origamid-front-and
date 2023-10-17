@@ -1,0 +1,32 @@
+
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+div {
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    background-color: rgb(253, 222, 46);
+    padding: 7px;
+    border: none;
+    border-radius: 7px;
+}
+
+strong {
+    color: rgb(253, 222, 46);
+
+}
