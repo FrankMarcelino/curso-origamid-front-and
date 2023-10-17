@@ -30,3 +30,8 @@ strong {
     color: rgb(253, 222, 46);
 
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
