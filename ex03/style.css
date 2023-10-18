@@ -17,123 +17,126 @@ conteúdo principal: máximo 1000px
 
 */
 
-* {
+body {
     margin: 0;
     background-color: #f7f7f7;
-    font-family: arial;
+    font-family: arial Arial, Helvetica, sans-serif;
+    display: grid;
+    gap: 60px;
+    justify-items: center;
+    margin-top: 60px;
 }
 
-h1 {
-    text-align: center;
-    padding: 30px;
+header {
+    display: grid;
+    gap: 60px;
+    justify-items: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3, p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
 }
 
 p {
     font-size: 20px;
+    line-height: 1.3;
 }
 
-.links {
+.menu {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
-    align-items: auto;
-    margin: 20px;
 }
 
-.link {
-
-    margin: 10px;
-    text-decoration: none;
-    color: black;
+.menu a {
     background-color: white;
-    padding: 15px;
+    padding: 15px 30px;
     border-radius: 3px;
+    color: black;
+    text-transform: uppercase;
 }
 
-.grid {
-    width: 1000px;
+.conteudo {
+    max-width: 1000px;
     display: grid;
-    margin: auto;
     grid-template-columns: 1fr 1fr;
 }
 
-.descricao {
+.introducao {
     background-color: white;
-    grid-column: 1;
-    display: block;
-}
-
-.titulo-decricao {
-    margin-top: 40px;
-    margin: 20px;
+    padding: 40px;
     text-align: right;
-    
-    background-color: white;
+    position: relative;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    justify-items: end;
 }
 
-.p-descricao {
-    margin: 20px;
-    text-align: right;
-    
-    background-color: white;
+
+
+.detalhe {
+    width: 60px;
+    height: 5px;
+    background-color: #ee2211;
+    position: absolute;
+    top: 30px;
+    right: -30px;
 }
 
-button {
-    margin: 20px;
-    text-decoration: none;
+.botao {
     color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
     background-color: #ee2211;
-    display: block;
-    align-self: end;
-    
-    
+    text-transform: uppercase;
 }
 
-
-.foto1 {
-    width: 500px;
-
-}
-
-.img {
-    max-width: 100%;
-}
 
 .vantagens {
     display: flex;
 }
 
 .titulo-vantagens {
-    margin: 20px;
     font-size: 64px;
+    text-transform: uppercase;
     color: #c6c6c6;
     text-align: right;
+    padding: 40px;
     align-self: center;
 }
 
 section {
-    padding: 30px;
+    padding: 40px;
     background-color: white;
 }
 
-.icon {
-    margin: 10px;
-    align-self: center;
-}
-
-section h3 {
-    margin: 5PX;
-    background-color: white;
+.vantagens-itens {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    padding: 20px;
 }
 
 section p {
-    background-color: white;
-    margin: 5PX;
+   grid-column: 2;
 }
 
 footer {
-    margin: 20px;
+    background-color: white;
+    width: 100%;
     text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
 }
