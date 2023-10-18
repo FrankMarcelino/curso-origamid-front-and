@@ -1,0 +1,139 @@
+/*
+Cores
+
+cinza-fundo: #f7f7f7
+cinza-texto: #c6c6c6
+vermelho: #ee2211
+
+Tipografia
+
+fonte: Arial
+parágrafos: 20px
+Vantagens Bikcraft: 64px
+
+Tamanhos
+
+conteúdo principal: máximo 1000px
+
+*/
+
+* {
+    margin: 0;
+    background-color: #f7f7f7;
+    font-family: arial;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: auto;
+    margin: 20px;
+}
+
+.link {
+
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.grid {
+    width: 1000px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+.descricao {
+    background-color: white;
+    grid-column: 1;
+    display: block;
+}
+
+.titulo-decricao {
+    margin-top: 40px;
+    margin: 20px;
+    text-align: right;
+    
+    background-color: white;
+}
+
+.p-descricao {
+    margin: 20px;
+    text-align: right;
+    
+    background-color: white;
+}
+
+button {
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ee2211;
+    display: block;
+    align-self: end;
+    
+    
+}
+
+
+.foto1 {
+    width: 500px;
+
+}
+
+.img {
+    max-width: 100%;
+}
+
+.vantagens {
+    display: flex;
+}
+
+.titulo-vantagens {
+    margin: 20px;
+    font-size: 64px;
+    color: #c6c6c6;
+    text-align: right;
+    align-self: center;
+}
+
+section {
+    padding: 30px;
+    background-color: white;
+}
+
+.icon {
+    margin: 10px;
+    align-self: center;
+}
+
+section h3 {
+    margin: 5PX;
+    background-color: white;
+}
+
+section p {
+    background-color: white;
+    margin: 5PX;
+}
+
+footer {
+    margin: 20px;
+    text-align: center;
+}
