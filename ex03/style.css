@@ -87,11 +87,10 @@ p {
 
 .introducao {
     background-color: white;
-    padding: 40px;
+    padding: 44px;
     text-align: right;
     position: relative;
     display: grid;
-    gap: 20px;
     align-items: center;
     justify-items: end;
 }
@@ -121,8 +120,10 @@ p {
     background-color: #900;
 }
 
-.vantagens {
-    display: flex;
+.conteudo2 {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .titulo-vantagens {
@@ -130,12 +131,22 @@ p {
     font-size: 4rem;
     text-transform: uppercase;
     color: #c6c6c6;
-    text-align: right;
     padding: 40px;
-    align-self: center;
+    text-align: right;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    
 }
 
-section {
+.vatangen-inten {
+    background-color: white;
+    padding: 20px;
+}
+
+
+.vantagens-itens {
     padding: 40px;
     background-color: white;
 }
@@ -145,7 +156,7 @@ section {
 }
 
 .vantagens-itens:hover {
-    border-left: 2px solid red;
+    border-left: 4px solid red;
 }
 
 .vantagens-itens {
@@ -153,9 +164,10 @@ section {
     grid-template-columns: auto 1fr;
     gap: 10px 20px;
     padding: 20px;
+    grid-column: 2;
 }
 
-section p {
+.conteudo2  p{
    grid-column: 2;
 }
 
