@@ -194,10 +194,15 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .introducao {
+        max-width: 60ch;
+    }
+
     .cover img {
         height: 100%;
         object-fit: cover;
         object-position: top center;
     }
+
 
 }
