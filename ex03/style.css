@@ -183,18 +183,19 @@ footer {
 
 @media (max-width: 600px){
     .conteudo {
-        max-width: 600px;
+        max-width: 350px;
         display: grid;
         grid-template-columns: 1fr;
     }
 
     .conteudo2 {
-        width: 600px;
+        width: 350px;
         display: grid;
         grid-template-columns: 1fr;
     }
 
     .introducao {
+        gap: 1rem;
         max-width: 60ch;
     }
 
@@ -204,5 +205,18 @@ footer {
         object-position: top center;
     }
 
-
+    .titulo-vantagens {
+        text-align: left;
+    }
+    
+    .introducao::after {
+        content: '';
+        display: none;
+        width: 60px;
+        height: 5px;
+        background-color: #ee2211;
+        position: absolute;
+        top: 30px;
+        right: -30px;
+    }
 }
