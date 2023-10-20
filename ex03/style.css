@@ -183,13 +183,13 @@ footer {
 
 @media (max-width: 600px){
     .conteudo {
-        max-width: 1000px;
+        max-width: 600px;
         display: grid;
         grid-template-columns: 1fr;
     }
 
     .conteudo2 {
-        width: 1000px;
+        width: 600px;
         display: grid;
         grid-template-columns: 1fr;
     }
