@@ -183,13 +183,13 @@ footer {
 
 @media (max-width: 600px){
     .conteudo {
-        max-width: 350px;
+        max-width: 400px;
         display: grid;
         grid-template-columns: 1fr;
     }
 
     .conteudo2 {
-        width: 350px;
+        width: 300px;
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -197,6 +197,8 @@ footer {
     .introducao {
         gap: 1rem;
         max-width: 60ch;
+        align-items: start;
+        text-align: left;
     }
 
     .cover img {
@@ -206,17 +208,32 @@ footer {
     }
 
     .titulo-vantagens {
+        align-items: start;
         text-align: left;
     }
     
     .introducao::after {
-        content: '';
         display: none;
-        width: 60px;
-        height: 5px;
-        background-color: #ee2211;
-        position: absolute;
-        top: 30px;
-        right: -30px;
+        
+    }
+
+    body {
+        margin: 0;
+        background-color: #f7f7f7;
+        font-family: arial Arial, Helvetica, sans-serif;
+        display: grid;
+        gap: 10px;
+        justify-items: center;
+        margin-top: 15px;
+    }
+    
+    .vatangen-inten {
+        background-color: white;
+        padding: 0px;
+    }
+
+    .cover h2 {
+        height: 100%;
+        object-fit: cover;
     }
 }
