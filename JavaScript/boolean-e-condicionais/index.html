@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean e condicionais</title>
+</head>
+<body>
+    <H1>boolean e condicionais</H1>
+    <P>Existem valores que retornam true e outros retornam false quando verificados em uma expressão booleana</P>
+    <ul>
+        <li>if(false) // false</li>
+        <li>if(0) ou if(-0)// false</li>
+        <li>if(NaN) // false</li>
+        <li>if(null) // false</li>
+        <li>if(undefined) ou if('') ou if("")// false</li>
+    </ul>
+    <span>Todo o resto é true</span>
+    
+    <h2>Operadores Lógicos &&</h2>
+
+    <p>&& Compara se uma expressão e a outra  é verdadeira</p>
+
+    <ul>
+        <li>true && true // true</li>
+        <li>true && false // false</li>
+        <li>'Gato' && 'Cachorro' // 'Cachorro'</li>
+        <li>(5 - 5) && (5 + 5) // 0</li>
+        <li>'Gato' && false // false</li>
+        <li>(5 >= 5) && (3 < 6); true</li>
+    </ul>
+
+    <span>Se ambos os valores forem true ele irá retornar o útimo valor verificado. Se algum valor for false ele irá retornar o mesmo e não irá continuar a verificar os próximos</span>
+    <script src="script.js"></script>
+</body>
+</html>
