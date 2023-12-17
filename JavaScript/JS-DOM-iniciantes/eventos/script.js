@@ -77,15 +77,15 @@
 
 // SOLUÇÃO DO PROFESSOR
 
-const todosElementos = document.querySelectorAll('body *')
+// const todosElementos = document.querySelectorAll('body *')
 
-function removerElementoClicado(event) {
-    event.currentTarget.remove()
-}
+// function removerElementoClicado(event) {
+//     event.currentTarget.remove()
+// }
 
-todosElementos.forEach((elemento) => {
-    elemento.addEventListener('click', removerElementoClicado)
-})
+// todosElementos.forEach((elemento) => {
+//     elemento.addEventListener('click', removerElementoClicado)
+// })
 
 
 
@@ -106,3 +106,15 @@ todosElementos.forEach((elemento) => {
 // }
 
 // Se o usuário clicar na tecla (t), aumente todo o texto do site. 
+
+
+function handleKeyboard(event) {
+    if(event.key === 't') {
+      document.documentElement.classList.toggle('aumentar-texto');
+      console.log(document)
+    }
+      
+    
+  }
+  
+  window.addEventListener('keydown', handleKeyboard);
