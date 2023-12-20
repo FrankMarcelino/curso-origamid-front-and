@@ -124,6 +124,10 @@ body {
     color: #e54;
 }
 
+.js .faq-lista dt:hover {
+    cursor: pointer;
+}
+
 .faq-lista dt::before {
     content: "";
     display: inline-block;
