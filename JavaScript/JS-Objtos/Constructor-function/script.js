@@ -28,29 +28,28 @@
 // removeClass(classe), remove a classe a todos os elementos
 
 
-function Dom() {
-    this.seletor = 'li'
-    const elements = document.querySelectorAll(this.seletor)
-
-    console.log(elements)
-    this.addClass = function() {
+function Dom(seletor) {
+    const elements = document.querySelectorAll(seletor)
+    
+    
+    this.addClass = function(classe) {
         elements.forEach((elemento) => {
-            elemento.classList.add('ativo')
+            elemento.classList.add(classe)
         })  
     }
 
-    this.removeClass = function() {
+    this.removeClass = function(classe) {
         elements.forEach((elemento) => {
-            elemento.classList.remove('ativo')
+            elemento.classList.remove(classe)
         })  
     }
 
 
 }
 
-const lista = new Dom();
-lista.addClass();
-lista.removeClass();
+const lista = new Dom('li');
+lista.addClass('ativo');
+// lista.removeClass();
 
 //   const lastLi = new Dom('li:last-child');
 //   lastLi.ativo('ativo');
